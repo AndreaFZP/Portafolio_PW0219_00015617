@@ -1,0 +1,28 @@
+nav{
+    @include set-dimensions(100%, auto);
+   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.btn{
+    color:$color-dark;
+    margin: 0.5em;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    box-shadow: 1px 1 px 1 px $color-dark;
+    background: gray;
+}
+
+.source{
+    background:$color-primary;
+}
+
+.site{
+    background: $color-secondary;
+}
+
+.faq{
+    background: $color-tertiary;
+}

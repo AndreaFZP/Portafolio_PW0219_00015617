@@ -1,0 +1,17 @@
+footer{
+    @include set-dimensions(100%, auto);
+   
+    display: flex;
+    justify-content: space-between;
+    
+    &>span{
+        padding: 0.7em;
+        color: whitesmoke;
+        font-size: 0.8em;
+        text-decoration: underLine;
+        background: rgba($color-dark,0.5);
+        border-radius: 0.5em;
+
+    }
+}
+
