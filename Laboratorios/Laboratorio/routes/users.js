@@ -1,9 +1,15 @@
 var express = require('express');
 var router = express.Router();
+var StudentManager = require('../controllers/StudentManager');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+router.get('/', StudentManager.getAll);
+
+router.get('/:id', StudentManager.getStudentById);
+
+router.post('/create', StudentManager.create);
+
+router.put('/update', StudentManager.update);
+
+router.delete('/delete', StudentManager.delete);
 
 module.exports = router;

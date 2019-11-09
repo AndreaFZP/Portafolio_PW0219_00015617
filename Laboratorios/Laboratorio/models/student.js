@@ -1,6 +1,6 @@
 const Mongoose = require("mongoose");
 
-const RegisterSchema = Mongoose.Schema({
+const StudentSchema = Mongoose.Schema({
     carnet: String,
     schedule: String,
     isLate: Boolean,
@@ -8,4 +8,4 @@ const RegisterSchema = Mongoose.Schema({
 
 });
 
-module.exports = Mongoose.model("Register", RegisterSchema);
+module.exports = Mongoose.model("Student", RegisterSchema);
